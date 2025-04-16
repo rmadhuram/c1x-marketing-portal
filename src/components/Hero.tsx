@@ -4,7 +4,7 @@ import { Button } from "@/components/ui/button";
 
 const Hero = () => {
   return (
-    <section className="pt-24 pb-12 md:py-32 overflow-hidden bg-gradient-to-br from-white to-indigo-50">
+    <section className="pt-24 pb-12 md:py-32 overflow-hidden bg-gradient-to-br from-white to-c1x-lightGray">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div className="flex flex-col space-y-6 animate-fade-in">
@@ -12,16 +12,16 @@ const Hero = () => {
               Chat with your 
               <span className="gradient-text"> marketing campaigns</span>
             </h1>
-            <p className="text-xl text-gray-600 md:pr-10">
+            <p className="text-xl text-c1x-gray md:pr-10">
               C1X Marketing MCP Server connects LLMs with marketing APIs, enabling
               natural language interactions with your Facebook, Google, and other ad campaigns.
             </p>
             <div className="flex flex-col sm:flex-row gap-4 pt-4">
-              <Button className="bg-c1x-blue hover:bg-c1x-darkBlue text-white font-medium py-6 px-8 rounded-lg text-lg">
+              <Button className="bg-c1x-orange hover:bg-c1x-gray text-white font-medium py-6 px-8 rounded-lg text-lg">
                 Get Started
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>
-              <Button variant="outline" className="border-c1x-blue text-c1x-blue hover:bg-c1x-blue hover:text-white py-6 px-8 rounded-lg text-lg">
+              <Button variant="outline" className="border-c1x-orange text-c1x-orange hover:bg-c1x-orange hover:text-white py-6 px-8 rounded-lg text-lg">
                 Book a Demo
               </Button>
             </div>
@@ -73,3 +73,4 @@ const Hero = () => {
 };
 
 export default Hero;
+
