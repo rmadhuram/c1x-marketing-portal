@@ -17,7 +17,11 @@ const Header = () => {
         <div className="flex items-center justify-between">
           <div className="flex items-center">
             <a href="/" className="flex items-center">
-              <span className="font-bold text-xl text-c1x-blue mr-1">C1X</span>
+              <img 
+                src="https://c1exchange.com/images/stories/joomla/logo-c1x.png" 
+                alt="C1X Logo" 
+                className="h-10 mr-2"
+              />
               <span className="font-medium text-lg">Marketing</span>
             </a>
           </div>

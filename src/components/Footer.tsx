@@ -1,4 +1,3 @@
-
 import { Facebook, Twitter, Linkedin, Github } from "lucide-react";
 
 const Footer = () => {
@@ -10,8 +9,12 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
           <div>
             <div className="flex items-center mb-4">
-              <span className="font-bold text-xl text-white mr-1">C1X</span>
-              <span className="font-medium text-lg">Marketing</span>
+              <img 
+                src="https://c1exchange.com/images/stories/joomla/logo-c1x.png" 
+                alt="C1X Logo" 
+                className="h-10 mr-2"
+              />
+              <span className="font-medium text-lg text-white">Marketing</span>
             </div>
             <p className="mb-4 text-gray-400">
               Bridging LLMs with marketing platforms through Model Context Protocol (MCP) technology.
