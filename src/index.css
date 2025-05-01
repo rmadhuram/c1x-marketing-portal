@@ -1,3 +1,4 @@
+
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
@@ -45,16 +46,16 @@
   }
 
   .dark {
-    --background: 222.2 84% 4.9%;
+    --background: 222.2 18% 12%;
     --foreground: 210 40% 98%;
 
-    --card: 222.2 84% 4.9%;
+    --card: 222.2 16% 16%;
     --card-foreground: 210 40% 98%;
 
-    --popover: 222.2 84% 4.9%;
+    --popover: 222.2 18% 12%;
     --popover-foreground: 210 40% 98%;
 
-    --primary: 235 87% 60%;
+    --primary: 26 91% 54%;
     --primary-foreground: 210 40% 98%;
 
     --secondary: 260 100% 69%;
@@ -71,7 +72,7 @@
 
     --border: 217.2 32.6% 17.5%;
     --input: 217.2 32.6% 17.5%;
-    --ring: 235 87% 60%;
+    --ring: 26 91% 54%;
     
     --sidebar-background: 240 5.9% 10%;
     --sidebar-foreground: 240 4.8% 95.9%;
@@ -100,11 +101,23 @@
     @apply bg-clip-text text-transparent bg-gradient-to-r from-c1x-orange to-c1x-gray;
   }
   
+  .dark .gradient-text {
+    @apply bg-clip-text text-transparent bg-gradient-to-r from-c1x-orange to-c1x-white;
+  }
+  
   .feature-card {
     @apply rounded-xl p-6 transition-all duration-300 hover:shadow-lg bg-white border border-c1x-lightGray;
   }
   
+  .dark .feature-card {
+    @apply bg-c1x-dark-card border-c1x-dark-border hover:shadow-lg hover:shadow-c1x-orange/10;
+  }
+  
   .icon-container {
     @apply flex items-center justify-center w-12 h-12 rounded-lg mb-4 bg-c1x-lightGray;
+  }
+  
+  .dark .icon-container {
+    @apply bg-c1x-dark-background text-c1x-orange;
   }
 }

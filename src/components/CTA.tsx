@@ -4,7 +4,7 @@ import { ArrowRight, CheckCircle } from "lucide-react";
 
 const CTA = () => {
   return (
-    <section className="py-20 bg-gradient-to-br from-c1x-blue to-c1x-purple text-white">
+    <section className="py-20 bg-gradient-to-br from-c1x-blue to-c1x-purple dark:from-c1x-orange dark:to-c1x-gray text-white">
       <div className="container px-4 md:px-6">
         <div className="grid grid-cols-1 lg:grid-cols-2 gap-12 items-center">
           <div>
@@ -31,7 +31,7 @@ const CTA = () => {
             </div>
             
             <div className="flex flex-col sm:flex-row gap-4">
-              <Button size="lg" className="bg-white text-c1x-blue hover:bg-gray-100 font-medium py-6 px-8 rounded-lg text-lg">
+              <Button size="lg" className="bg-white text-c1x-blue dark:text-c1x-orange hover:bg-gray-100 font-medium py-6 px-8 rounded-lg text-lg">
                 Start Free Trial
                 <ArrowRight className="ml-2 h-5 w-5" />
               </Button>

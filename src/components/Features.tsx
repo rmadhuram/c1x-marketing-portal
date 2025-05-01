@@ -9,11 +9,11 @@ type FeatureProps = {
 
 const FeatureCard = ({ icon, title, description }: FeatureProps) => (
   <div className="feature-card">
-    <div className="icon-container text-c1x-blue">
+    <div className="icon-container text-c1x-blue dark:text-c1x-orange">
       {icon}
     </div>
-    <h3 className="text-xl font-semibold mb-2">{title}</h3>
-    <p className="text-gray-600">{description}</p>
+    <h3 className="text-xl font-semibold mb-2 dark:text-white">{title}</h3>
+    <p className="text-gray-600 dark:text-gray-300">{description}</p>
   </div>
 );
 
@@ -52,13 +52,13 @@ const Features = () => {
   ];
 
   return (
-    <section id="features" className="py-20 bg-white">
+    <section id="features" className="py-20 bg-white dark:bg-c1x-dark-background">
       <div className="container px-4 md:px-6">
         <div className="text-center mb-12">
           <h2 className="text-3xl md:text-4xl font-bold mb-4">
             <span className="gradient-text">Powerful Features</span>
           </h2>
-          <p className="text-xl text-gray-600 max-w-2xl mx-auto">
+          <p className="text-xl text-gray-600 dark:text-gray-300 max-w-2xl mx-auto">
             C1X Marketing MCP Server bridges the gap between AI language models and your marketing tools.
           </p>
         </div>

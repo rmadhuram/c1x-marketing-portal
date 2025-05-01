@@ -71,6 +71,13 @@ export default {
           lightBlue: '#3A86FF',
           darkBlue: '#2B3595',
           lightGray: '#F8F9FA',
+          dark: {
+            background: '#222222',
+            card: '#303030',
+            text: '#E0E0E0',
+            muted: '#6C6C6C',
+            border: '#444444'
+          }
         }
       },
       borderRadius: {
