@@ -1,19 +1,14 @@
 
 import { createClient } from '@supabase/supabase-js'
 
-// Use environment variables if available, or fallback to empty strings
-// You will need to replace these with your actual Supabase URL and anon key
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL || 'https://your-project-url.supabase.co'
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY || 'your-anon-key'
+// Use the actual Supabase URL and anon key from the automatically generated client
+const supabaseUrl = 'https://kfqnbbvdpghiwnagdlid.supabase.co'
+const supabaseAnonKey = 'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6ImtmcW5iYnZkcGdoaXduYWdkbGlkIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NDYyODI4MjQsImV4cCI6MjA2MTg1ODgyNH0.x1_QLsZNHZ0PjmbzPYrrQYdOIPGjriAVnR7qyWaUXLE'
 
-// Check if the URL is still the placeholder
-if (supabaseUrl === 'https://your-project-url.supabase.co') {
-  console.warn('Please set your VITE_SUPABASE_URL environment variable')
-}
-
-// Check if the key is still the placeholder
-if (supabaseAnonKey === 'your-anon-key') {
-  console.warn('Please set your VITE_SUPABASE_ANON_KEY environment variable')
-}
-
-export const supabase = createClient(supabaseUrl, supabaseAnonKey)
+export const supabase = createClient(supabaseUrl, supabaseAnonKey, {
+  auth: {
+    storage: localStorage,
+    persistSession: true,
+    autoRefreshToken: true,
+  }
+})
