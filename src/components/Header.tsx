@@ -4,6 +4,7 @@ import { Button } from "@/components/ui/button";
 import { Menu, X } from "lucide-react";
 import { cn } from "@/lib/utils";
 import ThemeToggle from "./ThemeToggle";
+import AuthButton from "./AuthButton";
 
 const Header = () => {
   const [isMenuOpen, setIsMenuOpen] = useState(false);
@@ -40,7 +41,7 @@ const Header = () => {
             </a>
             <div className="flex items-center gap-4">
               <ThemeToggle />
-              <Button className="bg-c1x-blue hover:bg-c1x-darkBlue dark:bg-c1x-orange dark:hover:bg-c1x-orange/90">Get Started</Button>
+              <AuthButton />
             </div>
           </nav>
 
@@ -82,7 +83,7 @@ const Header = () => {
             >
               How It Works
             </a>
-            <Button className="bg-c1x-blue hover:bg-c1x-darkBlue dark:bg-c1x-orange dark:hover:bg-c1x-orange/90 w-full">Get Started</Button>
+            <AuthButton />
           </div>
         </div>
       </div>
