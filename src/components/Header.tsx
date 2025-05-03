@@ -48,6 +48,7 @@ const Header = () => {
           {/* Mobile Menu Button */}
           <div className="md:hidden flex items-center gap-2">
             <ThemeToggle />
+            <AuthButton />
             <Button variant="ghost" size="icon" onClick={toggleMenu} aria-label="Toggle Menu">
               {isMenuOpen ? <X size={24} /> : <Menu size={24} />}
             </Button>
@@ -83,7 +84,6 @@ const Header = () => {
             >
               How It Works
             </a>
-            <AuthButton />
           </div>
         </div>
       </div>
